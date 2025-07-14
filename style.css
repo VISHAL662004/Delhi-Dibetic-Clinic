@@ -224,6 +224,92 @@ form .form-control:focus {
 }
 
 
+.text-glow {
+  color: #00f5c3;
+  text-shadow: 0 0 8px rgba(0, 245, 195, 0.5);
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 245, 195, 0.1);
+  transition: all 0.4s ease;
+}
+.testimonial-card:hover {
+  box-shadow: 0 0 30px rgba(0, 245, 195, 0.3);
+  transform: translateY(-3px);
+}
+
+.faq-glass {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(0, 245, 195, 0.05);
+}
+
+
+
+
+
+/* Accordion container glass effect */
+.accordion.faq-glass {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(0, 245, 195, 0.05);
+}
+
+/* Accordion Items */
+.accordion-item {
+  background: transparent;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+/* Header buttons */
+.accordion-button {
+  background: rgba(255, 255, 255, 0.05);
+  color: #eee;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button.collapsed {
+  background: rgba(255, 255, 255, 0.02);
+  color: #ccc;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #00f5c3;
+  background: rgba(0, 245, 195, 0.05);
+  box-shadow: none;
+}
+
+/* Arrow color */
+.accordion-button::after {
+  filter: brightness(3);
+}
+
+/* Accordion Body */
+.accordion-body {
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.025);
+  border-left: 3px solid #00f5c3;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+
+
 
 
 
@@ -353,3 +439,26 @@ form .form-control:focus {
   transition-timing-function: ease-in-out;
 }
 
+
+
+.text-soft {
+  color: #ccc !important;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 245, 195, 0.08);
+  padding: 0;
+}
+.instagram-glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 245, 195, 0.1);
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
