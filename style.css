@@ -19,27 +19,39 @@ body {
   z-index: 999;
 }
 
-.navbar .navbar-nav .nav-link {
+/* Link styles */
+.navbar .nav-link {
   color: #ddd;
   position: relative;
   transition: all 0.3s ease;
   padding: 0.6rem 0;
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-  color: #00c9a7;
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #00f5c3;
 }
 
+/* Brand accent */
 .text-accent {
   background: linear-gradient(45deg, #00c9a7, #6c63ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Toggler button */
 .navbar-toggler {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 6px;
+}
+
+/* Optional spacing below navbar collapse */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    padding: 1rem;
+  }
 }
 
 
@@ -462,3 +474,6 @@ form .form-control:focus {
   margin: 0 auto;
   border-radius: 1rem;
 }
+
+
+
