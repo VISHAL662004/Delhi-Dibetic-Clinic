@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
@@ -12,29 +17,17 @@ body {
   text-shadow: 0 2px 8px rgba(106, 130, 251, 0.10), 0 1px 2px rgba(67, 233, 123, 0.08);
 }
 
-/* Glass-style navbar */
+/* 🌐 Sexy Glass-style Navbar */
 .glass-navbar {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 16px rgba(106, 130, 251, 0.08);
   transition: all 0.4s ease;
   z-index: 999;
 }
 
-/* Link styles */
-.navbar .nav-link {
-  color: #333;
-  position: relative;
-  transition: all 0.3s ease;
-  padding: 0.6rem 0;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: #007bff;
-}
-
-/* Brand accent */
+/* Navbar Brand (Delhi Diabetic Clinic) */
 .text-accent {
   color: #2b7a78;
   background: none;
@@ -43,26 +36,48 @@ body {
   text-shadow: 0 2px 8px rgba(106, 130, 251, 0.10), 0 1px 2px rgba(67, 233, 123, 0.08);
 }
 
-/* Toggler button */
+/* Navbar Links */
+.navbar .nav-link {
+  color: #333;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0.6rem 0;
+  font-weight: 500;
+}
+
+/* Hover & Active Link Style */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #00c9a7 !important;
+  font-weight: 600;
+}
+
+
+
+/* Navbar Toggler (Mobile Button) */
 .navbar-toggler {
   background-color: rgba(0, 0, 0, 0.07);
   border-radius: 6px;
+  border: none;
+  outline: none;
 }
 
-/* Optional spacing below navbar collapse */
+/* Mobile Dropdown Style */
 @media (max-width: 991px) {
   .navbar-collapse {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   }
 }
+
 
 
 .hero-section {
   position: relative;
   height: 75vh;
-  background-image: url('https://plus.unsplash.com/premium_photo-1682145288913-979906a9ebc8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('https://plus.unsplash.com/premium_photo-1673953509986-9b2bfe934ae5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2xpbmljfGVufDB8fDB8fHww');
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* for parallax scroll effect */
@@ -235,7 +250,7 @@ body {
 }
 
 form .form-control::placeholder {
-  color: #888;
+  color: #666;
 }
 
 form .form-control:focus {
@@ -507,4 +522,39 @@ form .form-control:focus {
 }
 
 
+/* Sexy AF Swiper gallery */
+.swiper {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 12px 32px rgba(106, 130, 251, 0.12), 0 3px 12px rgba(67, 233, 123, 0.08);
+}
+
+.swiper-slide {
+  padding: 10px;
+}
+
+.gallery-multi-img {
+  height: 280px;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-multi-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 245, 195, 0.3);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #2b7a78;
+  transition: transform 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.2);
+  color: #00c9a7;
+}
 
