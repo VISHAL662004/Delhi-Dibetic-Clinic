@@ -80,7 +80,8 @@ body {
   background-image: url('https://plus.unsplash.com/premium_photo-1673953509986-9b2bfe934ae5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2xpbmljfGVufDB8fDB8fHww');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* for parallax scroll effect */
+  background-attachment: fixed;
+  /* for parallax scroll effect */
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -94,7 +95,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* Slightly less opaque for clarity */
+  background: rgba(255, 255, 255, 0.5);
+  /* Slightly less opaque for clarity */
   z-index: 1;
 }
 
@@ -223,6 +225,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
 }
+
 .flip-card:hover .flip-card-back {
   box-shadow: 0 0 20px rgba(108, 99, 255, 0.5);
 }
@@ -272,6 +275,7 @@ form .form-control:focus {
   box-shadow: 0 8px 32px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
   transition: all 0.4s ease;
 }
+
 .testimonial-card:hover {
   box-shadow: 0 0 30px rgba(0, 245, 195, 0.3);
   transform: translateY(-3px);
@@ -363,12 +367,14 @@ form .form-control:focus {
   margin-bottom: 0.5rem;
   font-weight: 500;
   transition: color 0.3s;
-  text-decoration: none; /* Ensures no underline */
+  text-decoration: none;
+  /* Ensures no underline */
 }
 
 .footer-link:hover {
   color: #00c9a7;
-  text-decoration: none; /* Also prevents hover underline */
+  text-decoration: none;
+  /* Also prevents hover underline */
 }
 
 
@@ -431,6 +437,7 @@ form .form-control:focus {
   background: radial-gradient(circle at 30% 30%, #25d366, #128c7e);
   box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
 }
+
 .whatsapp-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
@@ -440,9 +447,11 @@ form .form-control:focus {
 .top-btn {
   display: none;
 }
+
 .top-btn.show {
   display: flex;
 }
+
 .top-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(0, 245, 195, 0.2);
@@ -453,17 +462,23 @@ form .form-control:focus {
 
 /* Improve section spacing on small screens */
 @media (max-width: 767px) {
-  h1, h2, h3 {
+
+  h1,
+  h2,
+  h3 {
     font-size: 1.5rem !important;
   }
+
   .hero-section .display-4 {
     font-size: 2rem !important;
   }
+
   .glass-box,
   .card,
   .map-box {
     margin-bottom: 1.5rem;
   }
+
   .navbar-nav {
     gap: 1rem;
   }
@@ -488,6 +503,7 @@ form .form-control:focus {
   box-shadow: 0 0 25px rgba(0, 245, 195, 0.03);
   padding: 0;
 }
+
 .instagram-glass {
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(0, 0, 0, 0.07);
@@ -517,7 +533,9 @@ form .form-control:focus {
   box-shadow: 0 -2px 16px 0 rgba(106, 130, 251, 0.08), 0 -1.5px 6px 0 rgba(67, 233, 123, 0.06);
 }
 
-.btn, .btn-elevate, .btn-gradient {
+.btn,
+.btn-elevate,
+.btn-gradient {
   box-shadow: 0 2px 8px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
 }
 
@@ -557,4 +575,3 @@ form .form-control:focus {
   transform: scale(1.2);
   color: #00c9a7;
 }
-
